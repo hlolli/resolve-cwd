@@ -1,5 +1,4 @@
-'use strict';
-const resolveFrom = require('resolve-from');
+"use strict";
 
-module.exports = moduleId => resolveFrom(process.cwd(), moduleId);
-module.exports.silent = moduleId => resolveFrom.silent(process.cwd(), moduleId);
+module.exports = require.resolve;
+module.exports.silent = require.resolve;
